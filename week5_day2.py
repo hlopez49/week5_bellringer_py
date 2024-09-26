@@ -48,21 +48,29 @@
     # indet in for loops 
 
 cars= ["Ford","Volvo", "BMW"]
-# add 4 new cars in the list 
-cars.append("Honda")
-cars.append("bugitti")
-cars.append("Toyota")
-# cars.append("Chevy")print out the list of cars in an f-string 
-# that say "the cars in the list are:" 
-print(f"the cars in the list are: {cars}")
+# # add 4 new cars in the list 
+# cars.append("Honda")
+# cars.append("bugitti")
+# cars.append("Toyota")
+# # cars.append("Chevy")print out the list of cars in an f-string 
+# # that say "the cars in the list are:" 
+# print(f"the cars in the list are: {cars}")
 
-cars[-1]= "austin martin"
-print(f"the cars are: {cars}")
+# cars[-1]= "austin martin"
+# print(f"the cars are: {cars}")
 
-cars.insert(1,"tesla")
-print(f"the cars now including tesla are: {cars}")
+# cars.insert(1,"tesla")
+# print(f"the cars now including tesla are: {cars}")
 
-print(cars.remove("BMW"))
-print(f"the list of cars without including BMW are: {cars}")
+# print(cars.remove("BMW"))
+# print(f"the list of cars without including BMW are: {cars}")
 
-print("Ford" in cars)
+# print("Ford" in cars)
+
+for car in cars: 
+    requestCar= input("Enter a car:")
+    cars.append(requestCar)
+    print(f"The cars in the list are:{cars}")
+    if len(cars) > 10:
+        print("You have reached the maxium number of cars")
+        break
