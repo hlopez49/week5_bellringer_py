@@ -75,3 +75,14 @@
 #         print("You have reached the maxium number of cars")
 #         break
 
+friends = ["Sam"]
+friends.append("Oscar")
+friends.append("Juan")
+friends.append("Luke")
+friends.append("Chris")
+print(f"The list of friends are: {friends}")
+
+friends[-1]= "Lucas"
+print(f"the list of friends with are: {friends}")
+
+friends.insert(2,"Waldo")
