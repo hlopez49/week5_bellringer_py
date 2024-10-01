@@ -1,3 +1,8 @@
+# # collection = single "variable" used to store multiple values
+# List = [] ordered and changeable. Duplicates OK
+# Set = {} unordered and immutable, but Add/Remove OK. NO Duplicates
+# Tuple = () ordered and unchangable. Duplicates OK. Faster
+
 # fruits= ["apple","orange","banana", "coconut"]
 # print(dir(fruits))
 # dir lists out all atrributes that could be used in a list
