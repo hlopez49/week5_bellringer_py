@@ -1,0 +1,41 @@
+choice = '' # creates a variable named choice and makes it equal makes choice equal an empty string
+
+
+def label_numbers(numbers): #names the function and uses the parameter number
+    choice = input("Do you want to find the mean of your numbers or the largest number").lower()  # asks the user if they want to find the mean or the largest number of their list
+   
+    classification = [] #creates an empty list to print out the classified numbers
+       
+    for number in numbers: # creates a for loop to go through the list of numbers given
+        if number > 0: #will say number is positive if it's bigger than zero
+            classification.append(f"{number} is positive")
+        elif number < 0: 
+            classification.append(f"{number} is negative")
+        else: 
+            classification.append(f"{number} is zero")
+    if choice == "mean": 
+        mean = sum(numbers)/ len(numbers) 
+        classification.append(f"The mean of the numbers is: {mean}") 
+
+
+    elif choice == "largest": 
+        largest = max(numbers) 
+        classification.append(f"The largest number is: {largest}")  
+
+
+    return classification 
+
+
+numbers = [10, -5, 0, 7, -2] 
+
+
+result = label_numbers(numbers) 
+
+
+numbers2 = [9, 3, -2, 5, 6]
+
+
+result = label_numbers(numbers2) 
+
+
+print(result)
